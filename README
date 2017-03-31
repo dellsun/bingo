@@ -5,3 +5,4 @@ unsquashfs version 4.2-git (2013/03/13)
 apt-get install squashfs-tools
 
 chmod +x src/binwalk-1.0/src/binwalk-script
+
