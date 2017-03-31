@@ -142,7 +142,7 @@ local BGFS = BG .. "/fs"
 local BINWALK = HOMEDIR .. "/src/binwalk-1.0/src/binwalk-script"
 local BINWALKMAGIC = HOMEDIR .. "/src/binwalk-1.0/src/binwalk/magic/binwalk"
 local BINWALKLOG = BGLOG .. "/binwalk.log"
-local BIN = HOMEDIR .. "/333333.bin"
+local BIN = HOMEDIR .. "/1.bin"
 
 local FS_TYPE = {"squashfs"}
 
@@ -299,7 +299,6 @@ end
 if arg[1] == '-b' then
     bingo.mksquashfs()
 else
-    BIN = arg[1]
     os.execute("rm -rf " .. BG)
     lfs.mkdir(BG)
     lfs.mkdir(BGLOG)
