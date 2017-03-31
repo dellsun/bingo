@@ -299,6 +299,7 @@ end
 if arg[1] == '-b' then
     bingo.mksquashfs()
 else
+    BIN = arg[1]
     os.execute("rm -rf " .. BG)
     lfs.mkdir(BG)
     lfs.mkdir(BGLOG)
